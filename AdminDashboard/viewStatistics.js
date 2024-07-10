@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchTotalStatistics();
     document.getElementById('IssueSelect').addEventListener('change', (event) => {
         fetchIssueStatistics(event.target.value);
+        
     });
     document.getElementById('viewBtn').addEventListener('click', () => {
         const selectedIssue = document.getElementById('IssueSelect').value;
